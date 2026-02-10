@@ -78,8 +78,13 @@ def process_csv_data(file_path):
             # Initialize counters
             total_vehicles = total_trucks = total_electric_vehicles = 0
             total_two_wheeled = elm_rabbit_buses = 0
-            no_turn_vehicles = over_speed = hours_of_rain = 0
-            hanley_peak_hour = defaultdict(int)
+            no_turn_vehicles = over_speed = 0
+            
+            # count unique rainy hours 
+            rainy_hours=set()
+            #busiest hour per junction
+            peak_hour_by_junction = defaultdict(lambda: defaultdict(int))
+            
 
             for row in csv_reader:
                 junction_name = row[column_map["JunctionName"]]
@@ -104,14 +109,28 @@ def process_csv_data(file_path):
                     no_turn_vehicles += 1
                 if vehicle_speed > junction_speed_limit:
                     over_speed += 1
-                if "rain" in weather_condition:
-                    hours_of_rain += 1
                 hour = time_of_day[:2]
-                hanley_peak_hour[hour] += 1
+                if "rain" in weather_condition:
+                    rainy_hours.add(hour)
 
-            # Calculate busiest hour(s)
-            busiest_hour_count = max(hanley_peak_hour.values(), default=0)
-            busiest_hours = [f"between {h}:00 and {int(h)+1}:00" for h, count in hanley_peak_hour.items() if count == busiest_hour_count]
+                peak_hour_by_junction[junction_name][hour] += 1
+                
+            hours_of_rain = len(rainy_hours)
+
+            # Calculate busiest hours
+            busiest_hours_by_junction = {}
+            for junction, hour_counts in peak_hour_by_junction.items():
+                if not hour_counts:
+                    busiest_hours_by_junction[junction] = []
+                    continue
+                busiest_count = max(hour_counts.values())
+                busiest_hours = [
+                    f"between {h}:00 and {int(h)+1}:00"
+                    for h, count in hour_counts.items()
+                    if count == busiest_count
+                ]
+                busiest_hours_by_junction[junction] = busiest_hours
+
 
             outcomes = {
                 "Total Vehicles": total_vehicles,
@@ -121,7 +140,7 @@ def process_csv_data(file_path):
                 "Vehicles Passing Without Turning": no_turn_vehicles,
                 "Vehicles Over Speed Limit": over_speed,
                 "Hours of Rain": hours_of_rain,
-                "Busiest Hour(s)": busiest_hours,
+                "Busiest Hour(s) (Per Junction)": busiest_hours_by_junction,
             }
             display_results(outcomes)
             return outcomes
