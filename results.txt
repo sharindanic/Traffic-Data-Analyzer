@@ -1,0 +1,99 @@
+
+Summary of Results:
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1037
+Total Trucks: 109
+Total Electric Vehicles: 368
+Total Two-Wheeled Vehicles: 401
+Vehicles Passing Without Turning: 363
+Vehicles Over Speed Limit: 205
+Hours of Rain: 0
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1334
+Total Trucks: 138
+Total Electric Vehicles: 442
+Total Two-Wheeled Vehicles: 503
+Vehicles Passing Without Turning: 494
+Vehicles Over Speed Limit: 250
+Hours of Rain: 389
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1037
+Total Trucks: 109
+Total Electric Vehicles: 368
+Total Two-Wheeled Vehicles: 401
+Vehicles Passing Without Turning: 363
+Vehicles Over Speed Limit: 205
+Hours of Rain: 0
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1037
+Total Trucks: 109
+Total Electric Vehicles: 368
+Total Two-Wheeled Vehicles: 401
+Vehicles Passing Without Turning: 363
+Vehicles Over Speed Limit: 205
+Hours of Rain: 0
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1334
+Total Trucks: 138
+Total Electric Vehicles: 442
+Total Two-Wheeled Vehicles: 503
+Vehicles Passing Without Turning: 494
+Vehicles Over Speed Limit: 250
+Hours of Rain: 389
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1037
+Total Trucks: 109
+Total Electric Vehicles: 368
+Total Two-Wheeled Vehicles: 401
+Vehicles Passing Without Turning: 363
+Vehicles Over Speed Limit: 205
+Hours of Rain: 0
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 1037
+Total Trucks: 109
+Total Electric Vehicles: 368
+Total Two-Wheeled Vehicles: 401
+Vehicles Passing Without Turning: 363
+Vehicles Over Speed Limit: 205
+Hours of Rain: 0
+Busiest Hour(s): ['between 18:00 and 19:00']
+--------------------------------------------------
+
+Summary of Results:
+--------------------------------------------------
+Total Vehicles: 101
+Total Trucks: 11
+Total Electric Vehicles: 29
+Total Two-Wheeled Vehicles: 29
+Vehicles Passing Without Turning: 38
+Vehicles Over Speed Limit: 20
+Hours of Rain: 9
+Busiest Hour(s): ['between 16:00 and 17:00']
+--------------------------------------------------
