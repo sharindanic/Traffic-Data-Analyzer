@@ -1,8 +1,8 @@
-# 🚦 Traffic Data Analyzer
+# Traffic Data Analyzer
 
 A Python desktop application built using Tkinter to analyze traffic CSV datasets and visualize vehicle activity.
 
-## 📌 Features
+## Features
 - Validates user date input
 - Loads traffic CSV files dynamically
 - Calculates:
@@ -16,12 +16,12 @@ A Python desktop application built using Tkinter to analyze traffic CSV datasets
 - Saves summary results to a text file
 - Displays histogram visualization using Tkinter
 
-## 🛠 Technologies Used
+## Technologies Used
 - Python
 - Tkinter (GUI)
 - CSV module
 - File handling
 
-## ▶️ How to Run
+## How to Run
 ```bash
 python final_traffic_analysis.py
